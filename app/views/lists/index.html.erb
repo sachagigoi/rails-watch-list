@@ -4,7 +4,7 @@
     <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path list.photo.key %>');">
       <div class="container">
         <h1><%= list.name %></h1>
-        <%= link_to "See list", list_path(list), class: "btn btn-flat" %>
+        <%= link_to "See list", list_path(list), class: "btn btn-primary" %>
       </div>
     </div>
 <% end %>
