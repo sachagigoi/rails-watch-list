@@ -70,4 +70,6 @@ gem "simple_form"
 gem "sassc-rails"
 gem "pg"
 
-  gem "dotenv-rails"
+gem "dotenv-rails"
+
+gem "cloudinary"
