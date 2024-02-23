@@ -1,0 +1,20 @@
+<h1><%= @list.name  %></h1>
+<%= link_to "Add a movie to the list", new_list_bookmark_path(@list) %>
+
+
+
+
+
+
+<div class="card-group">
+<% @list.bookmarks.each do |bookmark| %>
+  <div class="card m-1">
+    <%= image_tag bookmark.movie.poster_url, alt: "Le Wagon", class: 'card-img-top' %>
+    <div class="card-body">
+      <h5 class="card-title"><%= bookmark.movie.title %></h5>
+      <p class="card-text"><%= bookmark.movie.overview %></p>
+      <p class="card-text"><small class="text-muted"><%= bookmark.movie.rating %>/ 10</small></p>
+    </div>
+  </div>
+  <% end %>
+</div>

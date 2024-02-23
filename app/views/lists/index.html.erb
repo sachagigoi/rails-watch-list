@@ -1,0 +1,8 @@
+
+<h1>My Lists</h1>
+  <% @lists.each do |list| %>
+<div class="card m-3 p-3">
+  <h3><%= list.name %></h3>
+    <%= link_to "See list", list_path(list) %>
+</div>
+<% end %>
